@@ -1,7 +1,10 @@
 <template>
-    <div id="app">
-        <a class="arrow left">&lt</a>
-        <a class="arrow right">&gt</a>
+    <div class="slide">
+        <a class="arrow">&lt</a>
+        <div class="quote">
+            Bismillah
+        </div>
+        <a class="arrow">&gt</a>
     </div>
 </template>
 
@@ -12,33 +15,28 @@ export default {
 </script>
 
 <style>
-#app {
+.slide {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top:0;
-    left:0;
-    right: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.quote {
+    flex-grow: 4;
+    text-align: center;
+    padding:50px;
 }
 
 .arrow {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100px !important;
-    height: 100%;
-    text-align: center;
-    vertical-align: middle;
+    padding:30px;
 }
 
 .arrow:hover {
     background-color: #eee;
-}
-
-.left {
-    left:0;
-}
-
-.right {
-    right: 0;
 }
 </style>
