@@ -1,6 +1,8 @@
 export default {
-
-    getRandomQuote() {
-        return 0;
+  getRandomQuote () {
+    return {
+      msg: 'This is the quote',
+      source: 'Source'
     }
+  }
 }
